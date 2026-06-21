@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanika Pawar | Data Analyst & AI Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #000000; --card: #111111; --text: #ffffff; --text-muted: #a0a0a0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 30px 80px; background: rgba(0,0,0,0.9); position: sticky; top: 0; z-index: 1000; }
+        nav .logo { font-weight: 700; letter-spacing: 2px; }
+        nav a { color: var(--text); text-decoration: none; margin-left: 30px; font-size: 0.9rem; text-transform: uppercase; }
+        
+        .hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 1px solid #333; object-fit: cover; margin-bottom: 20px; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; text-align: center; }
+        h2 { text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 10px; display: inline-block; margin-bottom: 40px; }
+        
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; }
+        .project-card { background: var(--card); padding: 30px; border: 1px solid #222; transition: 0.3s; display: flex; flex-direction: column; }
+        .project-card:hover { border-color: #fff; }
+        .project-links { margin-top: auto; padding-top: 20px; }
+        
+        .skill-tag { border: 1px solid #333; color: var(--text-muted); padding: 5px 15px; display: inline-block; margin: 5px; font-size: 0.8rem; text-transform: uppercase; }
+        .foundation-box { border: 1px solid #222; padding: 30px; margin-top: 50px; text-align: left; }
+        
+        footer { text-align: center; padding: 60px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">SANIKA.PAWAR</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <img src="my_photo.jpeg" alt="Sanika Pawar" class="profile-img">
+    <h1 style="font-size: 2.5rem; letter-spacing: -1px;">SANIKA PAWAR</h1>
+    <p style="color: var(--text-muted); font-size: 1.1rem;">ASPIRING DATA ANALYST | AI & MACHINE LEARNING</p>
+    <div style="margin-top: 25px; max-width: 600px;">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">ML</span>
+        <span class="skill-tag">Data Analysis</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">AI Integration</span>
+    </div>
+</section>
+
+<div class="container">
+    <section id="about">
+        <h2>About</h2>
+        <p style="color: var(--text-muted); max-width: 700px; margin: auto;">I am an <strong>aspiring Data Analyst and AI/ML practitioner</strong> currently immersed in the world of data-driven problem solving. My approach is to bridge the gap between complex datasets and real-world utility by building functional AI-powered projects. I am deeply passionate about learning, experimenting with Python, and eager to contribute to meaningful, data-centric opportunities.</p>
+    </section>
+
+    <section id="projects" style="margin-top: 60px;">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Mindstream Dumper</h3>
+                <p style="color: var(--text-muted);">A smart AI tool that helps you organize your thoughts. It uses AI to automatically structure your notes, making it easier to keep track of your ideas and stay productive.</p>
+                <div class="project-links">
+                    <a href="https://github.com/sanika-pawar01/mindstream_dumper" style="color:#fff; font-weight:700;">GITHUB &rarr;</a> &nbsp; 
+                    <a href="https://mindstream-dumper.onrender.com" style="color:#fff; font-weight:700;">LIVE &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Carbon Footprint Calculator</h3>
+                <p style="color: var(--text-muted);">A data-driven web utility designed to calculate and analyze personal environmental impacts with clean, responsive logic.</p>
+                <div class="project-links">
+                    <a href="https://github.com/sanika-pawar01/website" style="color:#fff; font-weight:700;">GITHUB &rarr;</a> &nbsp; 
+                    <a href="https://sanikapawar02112007.github.io/website/" style="color:#fff; font-weight:700;">LIVE &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p style="color: var(--text-muted);">A custom-built, responsive portfolio website crafted to showcase my development journey and technical experiments using modern web standards.</p>
+                <div class="project-links">
+                    <a href="#" style="color:#fff; font-weight:700;">YOU ARE HERE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="foundation-box">
+            <h3 style="margin-top: 0;">Foundational Scripts</h3>
+            <p style="color: var(--text-muted);">These projects focus on core Python logic, probability, and system automation. They served as my building blocks for understanding software mechanics.</p>
+            <p><a href="https://github.com/sanika-pawar01/dice-simulator" style="color:#fff; font-weight:700;">Dice Simulator &rarr;</a></p>
+            <p><a href="https://github.com/sanika-pawar01/cmd-utility" style="color:#fff; font-weight:700;">CMD Utility Tool &rarr;</a></p>
+        </div>
+    </section>
+</div>
+
+<footer id="contact">
+    <p>SANIKARPAWAR02@GMAIL.COM</p>
+    <div style="margin-top: 20px;">
+        <a href="https://github.com/sanika-pawar01">GITHUB</a> / 
+        <a href="https://www.linkedin.com/in/sanika-pawar-05a3423b0/">LINKEDIN</a>
+    </div>
+</footer>
+
+</body>
+</html>
