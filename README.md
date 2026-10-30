@@ -1,19 +1,19 @@
-# Portfolio Website
-Welcome to my professional portfolio! This site showcases my journey as an aspiring Data Analyst and AI/ML practitioner.
+# Sanika Pawar — Portfolio
 
-## About
-I am an aspiring Data Analyst and AI/ML practitioner currently immersed in the world of data-driven problem solving. I bridge the gap between complex datasets and real-world utility by building functional AI-powered projects.
+A static, editorial portfolio built with HTML and CSS for GitHub Pages. It brings together software projects, performance, sport, yoga, leadership, and creative work.
 
-## Tech Stack
-- **Languages:** Python
-- **Focus:** Machine Learning, Data Analysis, SQL, AI Integration
-- **Tools:** VS Code, Git, GitHub Pages
+## Preview locally
 
-## Projects
-- **Mindstream Dumper:** AI-powered tool for thought organization.
-- **Carbon Footprint Calculator:** Data-driven web utility for environmental analysis.
-- **Foundational Scripts:** Python-based probability and automation tools.
+Open `index.html` in a browser, or use the VS Code Live Server extension. The page uses a Google Font stylesheet; the local font fallbacks work if the font service is unavailable.
 
-## Connect With Me
+Keep the portrait, achievement photos, and `SanikaResume.pdf` in the project root so the page's image and resume links resolve.
+
+## Achievement photos
+
+The page uses original photographs and the Super Dancer Maharashtra audition letter. See [media/achievements/README.md](./media/achievements/README.md) for the current image mapping. Do not publish personal images without permission.
+
+## Links
+
+- [GitHub](https://github.com/sanika-pawar01)
 - [LinkedIn](https://www.linkedin.com/in/sanika-pawar-05a3423b0/)
 - Email: sanikarpawar02@gmail.com
