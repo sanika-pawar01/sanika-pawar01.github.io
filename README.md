@@ -6,7 +6,7 @@ A static, editorial portfolio built with HTML and CSS for GitHub Pages. It bring
 
 Open `index.html` in a browser, or use the VS Code Live Server extension. The page uses a Google Font stylesheet; the local font fallbacks work if the font service is unavailable.
 
-Keep the portrait, achievement photos, and `SanikaResume.pdf` in the project root so the page's image and resume links resolve.
+Keep the portrait, achievement photos, and both resume files (`Sanika_Pawar_Resume (4).docx` and `Sanika_Pawar_Resume_Detailed.pdf`) in the project root so the page's image and resume links resolve.
 
 ## Achievement photos
 
