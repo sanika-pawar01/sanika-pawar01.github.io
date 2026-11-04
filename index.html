@@ -9,7 +9,6 @@
     <meta property="og:description" content="A technical portfolio with a plot twist: software, performance, sport, yoga, leadership, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sanika-pawar01.github.io/">
-    <meta property="og:image" content="https://sanika-pawar01.github.io/WhatsApp%20Image%202026-10-30%20at%2021.01.10.jpeg">
     <link rel="canonical" href="https://sanika-pawar01.github.io/">
     <title>Sanika Pawar — Builds software. Steps on stages.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,9 +179,9 @@
 
         .opening-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(300px, 0.69fr);
+            grid-template-columns: 1fr;
             align-items: center;
-            gap: clamp(30px, 7vw, 110px);
+            gap: 0;
         }
 
         .opening-copy { position: relative; z-index: 2; }
@@ -284,62 +283,6 @@
             border-color: currentColor;
         }
 
-        .portrait-frame {
-            position: relative;
-            width: min(100%, 440px);
-            justify-self: end;
-            aspect-ratio: 0.79;
-        }
-
-        .portrait-frame::before {
-            content: "";
-            position: absolute;
-            inset: 18px -18px -18px 18px;
-            border: 1px solid rgba(211, 243, 107, 0.34);
-        }
-
-        .portrait-frame::after {
-            content: "FIELD NOTES / PUNE, IN";
-            position: absolute;
-            right: -18px;
-            bottom: -44px;
-            color: var(--muted);
-            font-family: var(--mono);
-            font-size: 0.58rem;
-            letter-spacing: 0.12em;
-        }
-
-        .portrait-frame img {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 36%;
-            filter: saturate(0.65) contrast(1.05);
-        }
-
-        .portrait-wash {
-            position: absolute;
-            inset: 0;
-            z-index: 1;
-            background: linear-gradient(180deg, rgba(16,17,14,0.02) 43%, rgba(16,17,14,0.74) 100%);
-            pointer-events: none;
-        }
-
-        .portrait-caption {
-            position: absolute;
-            z-index: 2;
-            right: 18px;
-            bottom: 18px;
-            left: 18px;
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            color: #e8e9df;
-        }
-
-        .portrait-caption span:last-child { color: var(--signal); }
-
         .scroll-cue {
             position: absolute;
             bottom: 28px;
@@ -433,14 +376,6 @@
 
         .manifesto-text span { color: var(--muted); }
 
-        .school-note {
-            display: inline-block;
-            margin-top: 28px;
-            padding-top: 16px;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-        }
-
         .works {
             padding-top: 16px;
         }
@@ -495,6 +430,13 @@
             color: var(--quiet);
             font-size: 0.84rem;
         }
+
+        .work-features {
+            margin: 16px 0 0;
+            padding-left: 1.2em;
+        }
+
+        .work-features li + li { margin-top: 5px; }
 
         .work-tech {
             display: flex;
@@ -1267,8 +1209,7 @@
         @media (max-width: 900px) {
             .wrap { width: min(calc(100% - 48px), 720px); }
             .opening { min-height: auto; padding: 140px 0 100px; }
-            .opening-grid { grid-template-columns: 1fr; gap: 56px; }
-            .portrait-frame { width: min(80%, 420px); justify-self: center; }
+            .opening-grid { grid-template-columns: 1fr; }
             .opening::after { background: linear-gradient(180deg, rgba(16,17,14,0.13), var(--ink) 61%); }
             .chapter-top { grid-template-columns: 1fr; gap: 22px; }
             .work { grid-template-columns: 48px 1fr; gap: 18px; }
@@ -1307,7 +1248,6 @@
             .opening-actions,
             .opening-socials { margin-left: 0; }
             .opening-actions { gap: 8px 18px; }
-            .portrait-frame { width: calc(100% - 18px); }
             .scroll-cue { left: 18px; transform: none; }
             .chapter { padding: 92px 0; }
             .chapter-top { margin-bottom: 42px; }
@@ -1405,15 +1345,12 @@
             background: var(--paper);
         }
 
-        .opening::after,
-        .portrait-frame::before,
-        .portrait-frame::after,
-        .portrait-wash { display: none; }
+        .opening::after { display: none; }
 
         .opening-grid {
-            grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.72fr);
-            align-items: end;
-            gap: clamp(42px, 8vw, 125px);
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 0;
         }
 
         .scene-label { margin-bottom: 28px; color: var(--signal); }
@@ -1455,25 +1392,6 @@
         .opening-socials a:hover,
         .opening-socials a:focus-visible { color: var(--signal); }
 
-        .portrait-frame {
-            width: 100%;
-            max-width: 460px;
-            aspect-ratio: 0.77;
-            justify-self: end;
-        }
-
-        .portrait-frame img {
-            filter: saturate(0.82);
-            object-position: center 38%;
-        }
-
-        .portrait-caption {
-            right: 0;
-            bottom: -31px;
-            left: 0;
-            color: var(--ink);
-        }
-        .portrait-caption span:last-child { color: var(--signal); }
         .scroll-cue { display: none; }
 
         .ticker {
@@ -1510,7 +1428,6 @@
             letter-spacing: -0.025em;
             line-height: 1.08;
         }
-        .school-note { border-color: var(--line); color: var(--muted); }
 
         .works {
             padding-top: 0;
@@ -1761,9 +1678,8 @@
         @media (max-width: 900px) {
             .wrap { width: min(calc(100% - 56px), 720px); }
             .opening { padding: 132px 0 90px; }
-            .opening-grid { grid-template-columns: 1fr minmax(240px, 0.72fr); align-items: center; gap: 34px; }
+            .opening-grid { grid-template-columns: 1fr; }
             h1 { font-size: clamp(4.6rem, 10.5vw, 7.4rem); }
-            .portrait-frame { width: 100%; justify-self: end; }
             .chapter-top { grid-template-columns: 1fr 1.5fr; }
             .work { grid-template-columns: 52px minmax(0, 1fr) minmax(180px, 0.62fr); gap: 18px; }
             .work--acoustic { grid-template-columns: 52px minmax(0, 1fr); }
@@ -1785,12 +1701,11 @@
             .topbar nav a { flex-shrink: 0; white-space: nowrap; font-size: 0.48rem; letter-spacing: 0.01em; }
             .topbar .resume-link { padding: 5px 0; }
             .opening { min-height: auto; padding: 120px 0 70px; }
-            .opening-grid { grid-template-columns: 1fr; gap: 42px; }
+            .opening-grid { grid-template-columns: 1fr; }
             .opening-copy { max-width: 470px; }
             h1 { font-size: clamp(4.5rem, 19vw, 7rem); line-height: 0.72; }
             .opening-deck { margin-top: 29px; }
             .opening-actions, .opening-socials { margin-left: 0; }
-            .portrait-frame { width: min(82%, 350px); justify-self: end; }
             .ticker { align-items: baseline; padding: 14px 18px; }
             .ticker-line { font-size: 0.98rem; }
             .ticker .mono { font-size: 0.53rem; }
@@ -1887,11 +1802,6 @@
                         <a href="https://www.linkedin.com/in/sanika-pawar-05a3423b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
-                <figure class="portrait-frame">
-                    <img src="WhatsApp Image 2026-10-30 at 21.01.10.jpeg" alt="Sanika Pawar, in a portrait photograph" fetchpriority="high">
-                    <div class="portrait-wash" aria-hidden="true"></div>
-                    <figcaption class="portrait-caption mono"><span>Sanika Pawar</span><span>Builder / performer</span></figcaption>
-                </figure>
             </div>
             <div class="scroll-cue mono" aria-hidden="true">Roll into the story</div>
         </section>
@@ -1910,7 +1820,7 @@
                 <div class="manifesto reveal">
                     <div class="manifesto-aside">
                         <p class="mono">Working principle / 001</p>
-                        <span class="school-note">Computer Engineering diploma student<br>Government Polytechnic Pune<br>Maharashtra, India</span>
+                        <span>Maharashtra, India</span>
                     </div>
                     <p class="manifesto-text">From a microphone on stage to a microphone carrying data between phones. <span>I like turning questions into working things: Android apps, AI experiments, APIs, and systems that make you ask “could this work?”</span></p>
                 </div>
@@ -1962,7 +1872,25 @@
                 </article>
 
                 <article class="work work--compact reveal">
-                    <div class="work-number mono">03 / SERVICE</div>
+                    <div class="work-number mono">03 / VISION</div>
+                    <div class="work-body">
+                        <h3>Face Recognition-Based Attendance Management System</h3>
+                        <span class="work-tagline">Automated attendance, recorded as it happens.</span>
+                        <div class="work-copy">
+                            <p>Developed a real-time face recognition attendance system using Python and OpenCV to identify registered individuals through a webcam. It encodes and matches faces, prevents duplicate attendance entries, and logs dates and timestamps in CSV files.</p>
+                            <ul class="work-detail work-features">
+                                <li>Real-time face detection and recognition using a webcam.</li>
+                                <li>Facial feature encoding and comparison for identity verification.</li>
+                                <li>Automated attendance marking with duplicate-entry prevention.</li>
+                                <li>Date-wise CSV attendance records with timestamps.</li>
+                            </ul>
+                            <div class="work-tech"><span>Python</span><span>OpenCV</span><span>face_recognition</span><span>NumPy</span><span>CSV</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work work--compact reveal">
+                    <div class="work-number mono">04 / SERVICE</div>
                     <div class="work-body">
                         <h3>Java Lost &amp; Found</h3>
                         <span class="work-tagline">A small system for things that go missing.</span>
@@ -1979,7 +1907,7 @@
                 </article>
 
                 <article class="work work--case reveal">
-                    <div class="work-number mono">04 / INCIDENT</div>
+                    <div class="work-number mono">05 / INCIDENT</div>
                     <div class="work-body">
                         <h3>Oldsmar Case Study</h3>
                         <span class="work-tagline">A real-world incident, read as a security lesson.</span>
@@ -1996,7 +1924,7 @@
                 </article>
 
                 <article class="work work--compact reveal">
-                    <div class="work-number mono">05 / CLOUD</div>
+                    <div class="work-number mono">06 / CLOUD</div>
                     <div class="work-body">
                         <h3>Serverless Image Pipeline</h3>
                         <span class="work-tagline">An image goes in. A processed version comes out.</span>
@@ -2016,7 +1944,7 @@
                 </article>
 
                 <article class="work work--compact reveal">
-                    <div class="work-number mono">06 / THOUGHT</div>
+                    <div class="work-number mono">07 / THOUGHT</div>
                     <div class="work-body">
                         <h3>MindStream</h3>
                         <span class="work-tagline">Get it out of your head. Give it a shape.</span>
@@ -2184,7 +2112,6 @@
                 </div>
                 <div class="credits-strip reveal">
                     <div><span class="mono">SSC</span><strong>96.20%</strong></div>
-                    <div><span class="mono">Diploma performance</span><strong>~79–95%</strong></div>
                     <div><span class="mono">Currently studying</span><strong>Computer Engineering</strong></div>
                 </div>
                 <p class="plot-return reveal">From a microphone on stage to one carrying a message between phones. <span>Apparently, my hobbies don't fit into one category.</span></p>
