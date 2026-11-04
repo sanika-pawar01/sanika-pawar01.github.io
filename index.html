@@ -1926,14 +1926,20 @@
                 <article class="work work--compact reveal">
                     <div class="work-number mono">06 / CLOUD</div>
                     <div class="work-body">
-                        <h3>Serverless Image Pipeline</h3>
-                        <span class="work-tagline">An image goes in. A processed version comes out.</span>
+                        <h3>Serverless Event-Driven Image Processing &amp; Metadata Pipeline</h3>
+                        <span class="work-tagline">Push an image. Let GitHub Actions process it.</span>
                         <div class="work-copy">
-                            <p>A cloud-computing project exploring a serverless image-processing flow. The public repository includes an image-processing script and sample output; it is a practical look at how an image task can be separated into an automated pipeline.</p>
-                            <span class="work-detail">Cloud provider and deployment details are not stated here because the public repository does not document them.</span>
-                            <div class="work-tech"><span>Cloud computing</span><span>Serverless</span><span>Python</span><span>Image processing</span></div>
+                            <p>Uploading a JPG, JPEG, or PNG to the repository's <code>uploads/</code> folder triggers a GitHub Actions workflow on a temporary hosted runner. A Python script reads the image filename and dimensions, logs image metadata, adds a text watermark, and saves a processed copy in <code>processed/</code>. The workflow commits the result back to the repository; no always-on server is needed.</p>
+                            <ul class="work-detail work-features">
+                                <li>Push-triggered workflow for supported image uploads.</li>
+                                <li>Image processing with Python and Pillow; execution and logs in GitHub Actions.</li>
+                                <li>Processed images are committed to the repository's <code>processed/</code> folder.</li>
+                                <li>Demonstrates event-driven automation using GitHub-hosted compute.</li>
+                            </ul>
+                            <span class="work-detail">The current script applies a &ldquo;GPP-confidential&rdquo; text watermark. This repository demonstrates an automation pattern; it is not a continuously running cloud service.</span>
+                            <div class="work-tech"><span>GitHub Actions</span><span>Python</span><span>Pillow</span><span>YAML</span><span>Event-driven workflow</span></div>
                             <div class="work-links">
-                                <a href="https://github.com/sanika-pawar01/serverless-image-pipeline" target="_blank" rel="noopener noreferrer">View repository</a>
+                                <a href="https://github.com/sanika-pawar01/serverless-image-pipeline" target="_blank" rel="noopener noreferrer">View GitHub repository ↗</a>
                             </div>
                         </div>
                     </div>
